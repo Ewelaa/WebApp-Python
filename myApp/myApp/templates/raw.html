@@ -1,0 +1,38 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-header">
+    <h1>Baza</h1>
+</div>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Created at</th>
+        <th>First Number</th>
+        <th>Second Number</th>
+        <th>Third Number</th>
+        <th>Fourth Numbere</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for element in data1 %}
+    <tr>
+        <td>{{ element.id }}</td>
+        <td>{{ element.created_at }}</td>
+        <td>{{ element.firstNumber }}</td>
+        <td>{{ element.secondNumber }}</td>
+        <td>{{ element.thirdNumber }}</td>
+        <td>{{ element.fourthNumber }}</td>
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}

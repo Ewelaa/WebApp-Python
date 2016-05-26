@@ -1,0 +1,22 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <h1>Witaj na mojej super apce!</h1>
+    <p>Unikalna mozliwość analizy swoich danych ZA DARMO!</p>
+  </div>
+
+  <div class="page-header">
+    <h1>Wybierz różowy przycisk do wprowadzenia danych a niebieski do analizy! :)</h1>
+  </div>
+  <p>
+    <a href="/form" class="btn btn-danger" role="button">Różowy</a>
+    <a href="/result" class="btn btn-primary" role="button">Niebieski</a>
+  </p>
+
+
+{% endblock %}
+

@@ -1,0 +1,33 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-header">
+  <h1>Wypełnij danymi</h1>
+</div>
+
+<form role="form" action="/save" method="post">
+    <h3>Twoje dane</h3>
+    <div class="form-group">
+        <label for="firstNumber">Pierwsza dana:</label>
+        <input type="number" class="form-control" id="firstNumber" name="firstNumber" required>
+    </div>
+        <div class="form-group">
+        <label for="secondNumber">Druga dana:</label>
+        <input type="number" class="form-control" id="secondNumber" name="secondNumber" required>
+    </div>
+        <div class="form-group">
+        <label for="thirdNumber">Trzecia dana:</label>
+        <input type="number" class="form-control" id="thirdNumber" name="thirdNumber" required>
+    </div>
+        <div class="form-group">
+        <label for="fourthNumber">Czwarta dana:</label>
+        <input type="number" class="form-control" id="fourthNumber" name="fourthNumber" required>
+    </div>
+
+    <button type="submit" class="btn btn-default">Ładuj do bazy!</button>
+</form>
+
+{% endblock %}
+
